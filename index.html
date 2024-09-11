@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOCA2024</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url('background.png') #050e2b no-repeat center center fixed;
+            background-size: cover;
+            position: relative;
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.6); /* dark overlay */
+            z-index: 0;
+        }
+
+        .center-box {
+            position: relative;
+            z-index: 1;
+            background-color: rgba(255, 255, 255, 0.05);
+            border: 2px solid #00ff99; /* neon green */
+            border-radius: 10px;
+            padding: 40px;
+            text-align: center;
+            width: 300px;
+            box-shadow: 0 0 15px rgba(0, 255, 153, 0.4);
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        .btn {
+            display: block;
+            margin: 10px 0;
+            padding: 12px 20px;
+            text-decoration: none;
+            color: #0b0d19;
+            background-color: #00ff99;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #00cc7a;
+            color: #fff;
+        }
+
+        footer {
+            position: absolute;
+            bottom: 20px;
+            text-align: center;
+            width: 100%;
+            font-size: 12px;
+            color: #666;
+        }
+
+        @media (max-width: 600px) {
+            .center-box {
+                width: 80%;
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 20px;
+            }
+
+            .btn {
+                font-size: 14px;
+                padding: 10px 15px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="center-box">
+        <h1>MOCA2024</h1>
+        <a href="" class="btn"></a>
+    </div>
+</body>
+</html>
